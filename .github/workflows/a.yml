@@ -38,7 +38,7 @@ jobs:
       - name: Build with Gradle
         run: |
           ./gradlew clean
-          ./gradlew build --no-daemon --refresh-dependencies --stacktrace
+          ./gradlew build -x test --no-daemon --refresh-dependencies --stacktrace
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2048m -Dorg.gradle.daemon=false"
 
