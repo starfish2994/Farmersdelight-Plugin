@@ -1,4 +1,4 @@
-name: Build CraftEngine Plugin
+name: Build Plugin
 
 # 触发条件：推送代码或创建 Pull Request 时
 on:
@@ -46,7 +46,7 @@ jobs:
       - name: Find and upload plugin JAR
         uses: actions/upload-artifact@v4
         with:
-          name: craftengine-plugin
+          name: Farmersdelight-plugin
           path: |
             **/build/libs/*.jar
             **/target/*.jar
